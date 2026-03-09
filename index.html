@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+
+<body>
+    <h1>Event Registration Form</h1>
+    <form action="" method="get">
+        <div>
+            <label for="full-name">Full Name: </label>
+            <input type="text" id="full-name" placeholder="Enter Your full Name" required>
+        </div>
+        <div>
+            <label for="eml-address">Email Address: </label>
+            <input type="email" name="eml-address" id="eml-address" placeholder="Enter your email" required>
+        </div>
+        <div>
+            <label for="pass">Password: </label>
+            <input type="password" name="pass" id="pass">
+        </div>
+        <div>
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" id="gender">
+            <label for="gender">Male </label>
+            <input type="radio" name="gender" id="gender">
+            <label for="gender">Female </label>
+            <input type="radio" name="gender" id="gender">
+            <label for="gender">Other </label>
+        </div>
+        <div>
+            <label for="interests">Interests: </label>
+            <input type="checkbox" name="interests" id="interests">
+            <label for="interests">AI</label>
+            <input type="checkbox" name="interests" id="interests">
+            <label for="interests">Web Development</label>
+            <input type="checkbox" name="interests" id="interests">
+            <label for="interests">Data Science</label>
+        </div>
+        <div>
+            <label for="emp-lev">Experience Level: </label>
+            <select name="emp-lev" id="emp-lev">
+                <option value="">Select Your Level</option>
+                <option value="emp-lev">Beginner</option>
+                <option value="emp-lev">Intermediate</option>
+                <option value="emp-lev">Advance</option>
+            </select>
+
+        </div>
+        <div>
+            <label for="session">Favorite Session:</label><br>
+            <input list="sessions" id="session" name="session" placeholder="Choose a session">
+            <datalist id="sessions">
+                <option value="AI in Healthcare">
+                <option value="Web 3.0 Development">
+                <option value="Data Science with Python">
+                <option value="Cloud Computing Basics">
+            </datalist>
+        </div>
+        <div>
+            <label for="abt-yrsf">About Yourself</label>
+            <br>
+            <textarea name="abt-yrsf" id="abt-yrsf" placeholder="Tell about yourself" rows="4"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Register" placeholder="Submit">
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>
